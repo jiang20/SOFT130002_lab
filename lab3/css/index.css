@@ -1,0 +1,152 @@
+body
+{
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+html
+{
+    min-width: 700px;
+}
+header
+{
+    position: sticky;
+    top: 0;
+    /*height: 60px;*/
+    background-color: white;
+    color: black;
+    padding: 5px 10%;
+    overflow: hidden;
+}
+
+header nav
+{
+    display: inline-block;
+}
+nav h1
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#nav-left
+{
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+    width: auto;
+    white-space: nowrap;
+}
+
+#nav-left a
+{
+    text-decoration: none;
+    color: black;
+    padding: 0 5%;
+    white-space: nowrap;
+}
+
+#nav-right
+{
+    float: right;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 45.86px;
+    vertical-align: middle;
+}
+
+#nav-right a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#nav-left a:hover, #nav-right a:hover
+{
+    color: #87bff2;
+}
+
+main
+{
+    margin: 20px 10%;
+    background-color: white;
+    padding: 10px 2%;
+    box-shadow: 0 0 4px 1px rgba(228, 228, 228, 0.98);
+}
+
+main ul
+{
+    list-style: none;
+}
+
+.recommend
+{
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+#side
+{
+    float: right;
+    padding-left: 5%;
+    padding-bottom: 10px;
+    padding-right: 3%;
+}
+#side li
+{
+    padding-bottom: 8px;
+}
+#side a
+{
+    text-decoration: none;
+    color: black;
+    /*font-weight: bold;*/
+    /*padding-bottom: 20px;*/
+}
+
+#side a:hover
+{
+    color: #87bff2;
+}
+section
+{
+    padding: 0 3%;
+}
+section h4
+{
+    font-weight: bold;
+}
+
+section p
+{
+    font-size: 15px;
+}
+
+section li
+{
+    border-bottom: 1px gainsboro solid;
+    padding-bottom: 10px;
+    box-shadow: none;
+}
+.likes
+{
+    font-size: 10px;
+    background-color: #bbe3f2;
+    color: #5585ed;
+    padding: 5px 5px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.pages
+{
+    padding: 5px 0;
+}
+
+.pages .chose
+{
+    color: #70a2f2;
+    font-weight: bold;
+}
+
