@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p,div{font-size:16pt;}
+        #text1{color:orange;}
+        .text2{color:lime;}
+        .text2[title]{color:yellow;}
+        span[title="text3"]{color:green;}
+        span[title="text5"]{color:green;}
+        p span{color:blue;}
+        span{color:teal;}
+    </style>
+</head>
+<body>
+
+<p>
+    <span id="text1" class="text2">Line1：consectetaur adipisicing elit,</span> <br>
+    <span class="text2">Line2：consectetaur adipisicing elit,</span> <br>
+    <span class="text2" title="text3">Line3：consectetaur adipisicing elit,</span> <br>
+    <span class="text2" title="text4">Line4：consectetaur adipisicing elit,</span> <br>
+    <span title="text5">Line5：consectetaur adipisicing elit,</span> <br>
+    <span>Line6：consectetaur adipisicing elit,</span> <br>
+    <span style="color:olive;">Line7：consectetaur adipisicing elit,</span> <br>Lorem ipsum dolor sit amet,
+</p>
+<div>
+    <span>Line8：consectetaur adipisicing elit,</span> <br>
+    Lorem ipsum dolor sit amet,
+</div>
+</body>
+
+</html>

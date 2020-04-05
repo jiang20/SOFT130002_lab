@@ -1,0 +1,83 @@
+.navbar-brand{
+    padding: 6px 6px;
+}
+.navbar
+{
+    border-radius: 0;
+}
+.nav
+{
+    margin-bottom: 0;
+}
+
+
+.carousel-inner img
+{
+    width: 100%;
+}
+#pictures
+{
+    text-align: center;
+    margin-top: 20px;
+
+}
+#pictures .picture
+{
+    display: inline-block;
+    width: 25%;
+    margin: 15px 15px;
+    position: initial;
+}
+.list-group-item .list-group
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.list-group-item .list-group-item
+{
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.list-group-item .list-group-item img
+{
+    border-radius: 10px;
+}
+.title
+{
+    font-size: larger;
+}
+.title,.description
+{
+    border: none;
+    text-align: left;
+}
+footer{
+    background-color: #333333;
+}
+
+.col-md-3 div
+{
+    margin: 20px 0;
+}
+.col-md-3 img
+{
+    margin:0 20px ;
+}
+.row{
+    margin-top: 30px;
+    margin-left: 110px;
+}
+.copyright{
+    color: white;
+    text-align: center;
+}
+footer a{
+    color: white;
+}
