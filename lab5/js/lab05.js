@@ -10,7 +10,22 @@ let url_submit = document.getElementById("url_submit");
 let url_result = document.getElementById("url-result");
 url_submit.addEventListener('click',showWindowHref);
 function showWindowHref(){
-
+    let url_string = url.value+"";
+    let arg_index = url_string.indexOf('?');
+    let args = url_string.substring(arg_index+1);
+    while(args.includes("=")){
+        let name = args.substring(0,args.indexOf('='));
+        if(name === "name"){
+            let value;
+            if(args.includes('&'))
+                value = args.substring(args.indexOf('=')+1,args.indexOf('&'));
+            else
+                value = args.substring(args.indexOf('=')+1);
+            url_result.value = value;
+            return;
+        }
+        args = args.substring(args.indexOf('&')+1);
+    }
 }
 //2. 每隔五秒运行一次函数直到某一整分钟停止，比如从20:55:45运行到20:56:00停止；或者运行10次，先到的为准。从1开始每过五秒，输入框内数值翻倍。初始值为1。
 //注意：你可以在函数 timeTest内部 和 timeTest外部 写代码使得该功能实现。
@@ -18,8 +33,22 @@ function showWindowHref(){
 
 //提示：mul为html中id为"mul"的元素对象，可直接通过mul.value获得其内的输入值。
 let mul = document.getElementById("mul");
-function timeTest(){
-}
+// mul.addEventListener('window.onload',timeTest);
+window.onload = function timeTest(){
+    let count = 0;
+    let minute = new Date().getMinutes();
+    mul.value = 1;
+    // let timeout = setTimeout(function () {
+    //     mul.value = 1
+    // },5000);
+    // clearTimeout(timeout);
+    let interval = setInterval(function () {
+        if(count < 10 && minute === new Date().getMinutes()) {
+            mul.value = mul.value * 2;
+            count++;
+        }
+    },5000);
+};di
 //3. 判断输入框most里出现最多的字符，并统计出来。统计出是信息在most_result输入框内以"The most character is:" + index + " times:" + max的形式显示。
 //如果多个出现数量一样则选择一个即可。
 //请仅在arrSameStr函数内写代码。
@@ -30,5 +59,23 @@ let result = document.getElementById("most-result");
 let most_submit = document.getElementById("most_submit");
 most_submit.addEventListener('click',arrSameStr);
 function arrSameStr(){
-
+    let most_string = most.value+"";
+    let array = {};
+    for(let i = 0; i < most_string.length; i++){
+        if(!array[most_string.charAt(i)]) {
+            array[most_string.charAt(i)] = 1;
+        }
+        else {
+            array[most_string.charAt(i)]++;
+        }
+    }
+    let max_time = 0, index = -1;
+    let a;
+    for(a in array){
+        if (array[a] > max_time) {
+            max_time = array[a];
+            index = a;
+        }
+    }
+    result.value = "The most character is:" + a + " times:"+max_time;
 }
