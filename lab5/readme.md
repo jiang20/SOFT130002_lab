@@ -4,7 +4,7 @@
 
 ## 完成情况
 ### 界面效果
-![lab5.png](https://github.com/jiang20/SOFT130002_lab/lab5/picture/result.png)
+![JdiOSI.png](https://s1.ax1x.com/2020/04/23/JdiOSI.png)
 
 ## 完成细节
 ### 函数相关知识点
