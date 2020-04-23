@@ -4,7 +4,7 @@
 
 ## 完成情况
 ### 界面效果
-![lab5.png](./picture/result.png)
+![lab5.png](https://github.com/jiang20/SOFT130002_lab/lab5/picture/result.png)
 
 ## 完成细节
 ### 函数相关知识点
