@@ -48,7 +48,7 @@ window.onload = function timeTest(){
             count++;
         }
     },5000);
-};di
+};
 //3. 判断输入框most里出现最多的字符，并统计出来。统计出是信息在most_result输入框内以"The most character is:" + index + " times:" + max的形式显示。
 //如果多个出现数量一样则选择一个即可。
 //请仅在arrSameStr函数内写代码。
@@ -57,7 +57,7 @@ window.onload = function timeTest(){
 let most = document.getElementById("most");
 let result = document.getElementById("most-result");
 let most_submit = document.getElementById("most_submit");
-most_submit.addEventListener('click',arrSameStr);
+// most_submit.addEventListener('click',arrSameStr);
 function arrSameStr(){
     let most_string = most.value+"";
     let array = {};
@@ -77,5 +77,5 @@ function arrSameStr(){
             index = a;
         }
     }
-    result.value = "The most character is:" + a + " times:"+max_time;
+    result.value = "The most character is:" + index + " times:"+max_time;
 }
