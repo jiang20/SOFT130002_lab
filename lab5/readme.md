@@ -7,7 +7,7 @@
 ![JdiOSI.png](https://s1.ax1x.com/2020/04/23/JdiOSI.png)
 
 ### 提交截图
-![Jdw7fe.png](https://s1.ax1x.com/2020/04/23/Jdw7fe.png)
+
 
 ## 完成细节
 ### 函数相关知识点
